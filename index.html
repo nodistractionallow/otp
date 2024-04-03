@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SMS - BOMBER</title>
+<style>
+  body {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding-top: 50px;
+  }
+  h1 {
+    color: #fff;
+  }
+  #password {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 20px;
+  }
+</style>
+<script>
+window.onload = function() {
+  // Array of codes
+  var codes = [
+    589712, 930467, 218504, 765893, 341096, 572109, 804635, 296741, 157824, 630987,
+    401285, 974162, 836594, 502137, 389675, 714829, 465871, 203958, 687314, 925470,
+    148906, 573218, 940357, 681324, 297083, 810546, 643207, 215789, 476930, 932185,
+    568741, 302697, 758461, 849236, 201945, 634879, 897504, 210847, 569134, 384096,
+    719852, 640981, 297435, 815724, 350492, 984175, 621307, 437589, 809623, 175986,
+    536720, 842579, 690314, 217540, 957481, 308427, 205891, 690723, 547839, 821046,
+    493827, 765918, 623049, 857392, 430965, 219783, 587634, 908175, 246810, 375946,
+    684130, 932584, 709235, 168432, 572690, 431097, 895647, 310762, 495618, 724803,
+    890254, 315729, 487530, 621045, 978306, 254937, 679401, 406598, 782914, 539268,
+    106249, 873195, 302715, 594827, 890312, 746203
+  ];
+  
+  // Get a random code
+  var randomCode = codes[Math.floor(Math.random() * codes.length)];
+  
+  // Display the random code
+  document.getElementById("password").innerHTML = "Your Password: " + randomCode;
+};
+</script>
+</head>
+<body>
+<h1>SMS - BOMBER</h1>
+<p id="password"></p>
+</body>
+</html>
+
